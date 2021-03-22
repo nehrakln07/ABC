@@ -1,0 +1,133 @@
+body{
+  margin: 0px;
+}
+.navbar {
+  .title {
+    background: #154c88;
+    margin: 0;
+    padding: 15px;
+    color: #fff;
+    text-align: left;
+  }
+}
+
+.main-container{
+  display: flex;
+  flex-wrap: wrap;
+  .widget-container{
+    box-shadow: 3px 3px 5px 0 #696969;
+    margin: 10px;
+    width: calc(50% - 20px);
+    float: left;
+    position: relative;
+    transition: all .3s;
+    &.highlight{
+      width: calc(1000% - 20px);
+    }
+    .header{
+      background: #144c88;
+      padding: 1em 1.5em;
+      border-top: 4px solid #7dd343;
+      color: #fff;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      h2{
+        margin: 0;
+      }
+      .header-action{
+        display: flex;
+      }
+    }
+    .container-body{
+      width: 100%;
+      color: white;
+      display: flex;
+      h4{
+        padding: 0 1.5em;
+      }
+      .data{
+        position: relative;
+        width: 40%;
+        height: 275px;
+        background: #20649b;
+      }
+      .info{
+        width: 60%;
+        .t-header{
+          height: 50px;
+          border-bottom: 1px solid #ccc;
+          display: flex;
+          .title{
+            width: 75%;
+            color: #154c88;
+            font-size: 20px;
+            font-weight: 600;
+            border-right: 1px solid #ccc;
+            padding: 0 1em;
+          }
+          .value{
+            width: 25%;
+            color: #7dd343;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.progress-bar-container{
+  padding: 0 1.5em;
+  font-weight: 400;
+  color: white;
+  .attributes{
+    display: flex;
+    justify-content: space-between;
+  }
+  progress{
+    height: 5px;
+    margin: .35em 0 1em;
+    border-radius: 10px;
+    width: 100%;
+    &::-webkit-progress-bar{
+      background-color: #0f3d77;
+    }
+    &::-webkit-progress-value{
+      background-color: #45b0e6;
+    }
+  }
+}
+
+table{
+  display: flex;
+    flex-direction: column;
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: left;
+    height: 100%;
+    width: 100%;
+  tr{
+    min-height: 40px;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    border-bottom: .05rem solid #dadee4;
+    th,td{
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+    th{
+      color: black;
+    }
+  }
+  tbody{
+   height: 180px;
+    overflow-y: auto;
+  }
+}
